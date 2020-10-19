@@ -1,0 +1,128 @@
+* {
+	box-sizing: border-box;
+}
+
+body{
+	font-family: Helvetica;
+}
+
+h1 {
+	text-align: center;
+	margin: 30px;
+	font-size: 175%;
+}
+
+/*
+div#container{
+	position: relative;
+}
+*/
+
+div#content{
+	padding: 10px;
+	clear: right;
+}
+
+.row{
+	width: 100%;
+}
+
+div#chicken{
+	width: 33.3%;
+	text-align: center;
+	font-size: 125%;
+	background-color: #F07445;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+	position: relative;
+	float: right;
+}
+
+div#beef{
+	width: 33.3%;
+	text-align: center;
+	font-size: 125%;
+	background-color: #4281FF;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+	float: right;
+}
+
+div#sushi{
+	width: 33.3%;
+	text-align: center;
+	font-size: 125%;
+	background-color: #67DFC2;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+	float: right;
+}
+
+div#chickenbox{
+	background-color: #D9DFDE;
+	border: 1px solid black;
+	position: relative;
+	margin: 10px;
+}
+
+div#beefbox{
+	background-color: #D9DFDE;
+	border: 1px solid black;
+	position: relative;
+	margin: 10px;
+}
+
+div#sushibox{
+	background-color: #D9DFDE;
+	border: 1px solid black;
+	position: relative;
+	margin: 10px;
+}
+
+.chickmarg{
+	padding: 10px;
+}
+.beefmarg{
+	padding: 10px;
+}
+.sushimarg{
+	padding: 10px;
+}
+
+/****To Make It Responsive****/
+
+/*Mobile*/
+@media (max-width: 767px) {
+	.chickmarg, .beefmarg, .sushimarg{
+		float: left;
+	}
+}
+
+/*Tablet*/
+@media (min-width: 768px) and (max-width: 990px) {
+	.chickmarg, .beefmarg, .sushimarg{
+		float: left;
+	}
+	.chickmarg{
+		width: 50%;
+	}
+	.beefmarg{
+		width: 50%;
+	}
+}
+
+/*Desktop*/
+@media (min-width: 991px) {
+	.chickmarg, .beefmarg, .sushimarg{
+		float: left;
+	}
+	.chickmarg{
+		width: 33.33%;
+	}
+	.beefmarg{
+		width: 33.33%;
+	}
+	.sushimarg{
+		width: 33.33%;
+	}
+}
